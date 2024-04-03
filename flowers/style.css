@@ -1,0 +1,293 @@
+:root{
+    --green:#717e69;
+    --violet:#ab6398;
+}
+*{ 
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.test{
+    background: #000;
+    height: 15px;
+    width: 100%;
+}
+.header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background:#fff;
+    height: 60px;
+    
+    box-shadow: 0px 5px 3px rgba(128, 128, 128, 0.708);
+}
+.header a {
+    text-decoration:none;
+}
+.logo a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #333;
+}
+.logo a span{
+    color:var(--violet)
+}
+.logo a:hover ,.navbar a:hover , .header .icons a:hover{
+    color: var(--violet);
+}
+.navbar a {
+    color: #666;
+    padding: 0 15px;
+    
+}
+.header .icons a{
+    color: #333;
+    padding: 10px;
+}
+.home{
+    padding: 0 100px;
+    min-height: 100vh;
+    background-image: url(nn.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+   
+}
+.home .home-content{
+    max-width: 450px;
+}
+
+.home-content h1{
+    color:#000;
+    font-weight: bolder;
+    
+}
+.home-content h2{
+    color:var(--green);
+    font-weight:bold ;
+    
+}
+.home-content p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.home-content .btn , .about .about-infos .btn{
+    color:#fff;
+    background: #000;
+    width: 150px;
+    height: 37px;
+    border-radius: 17px;
+    border: none;
+    
+} 
+.home .home-content .btn:hover , .about .about-infos .btn:hover{
+    background:var(--violet);
+    color: #fff;
+}
+.about .about-title{
+    width: 80%;
+    margin: 20px auto;
+    background: #bd85a116;
+    padding: 10px 0;
+    border-radius: 7px;
+}
+.about-title h2{
+    text-align: center;
+}
+.about-title h2 span{
+    color: var(--violet);;
+}
+.about .about-infos{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 20px 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-infos video{
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.about .about-infos .description{
+    width:600px;
+}
+.shop-infos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #999;
+    padding: 30px 40px;
+}
+.shop-infos .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #fff;
+    gap:30px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 266px;
+    height: 100px;
+}
+
+.shop-infos .details i{
+    font-size: 40px;
+}
+.shop-infos .details i:hover{
+    color: var(--violet);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.shop-infos .details div span{
+    color: var(--violet);
+}
+.products .products-title{
+    width: 80%;
+    margin: 20px auto;
+    background: #bd85a116;
+    padding: 10px 0;
+    border-radius: 7px;
+}
+.products-title h2{
+    text-align: center;
+}
+.products-title h2 span{
+    color: var(--violet);;
+}
+.products-menu{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto;
+    background: var(--green);
+}
+.products-menu .card {
+    margin: 20px;
+    flex-shrink: 0;
+}
+.products-menu .card:hover{
+    transform: scale(1.07);
+}
+.card .btn{
+    color:#fff;
+    background:var(--violet);
+    width: 120px;
+    height: 37px;
+    border-radius: 17px;
+    border: none;
+}
+.card-body .card-title-div{
+    display: flex;
+    justify-content: space-between;
+}
+.card-body .card-title-div span{
+    color: red;
+}
+.card-body .card-title-div .old-price{
+    color:#666;
+    text-decoration: line-through;
+}
+ .contact-title{
+    width: 80%;
+    margin: 20px auto;
+    background: #bd85a116;
+    padding: 10px 0;
+    border-radius: 7px;
+
+}
+ .contact-title h2{
+    text-align: center;
+    color: var(--violet);
+} 
+ .contact-title span{
+    color:#000;
+}
+.contact-us {
+    background-image: url(composition-with-two-flowers-leaves_23-2147601174-1536x1024.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}
+.contact-content1{
+    background-color: #ab639873;
+    padding:40px ;
+}
+.contact-content1 h3{
+    text-align: center;
+}
+.contact-content1 p{
+    text-align: center;
+}
+.contact-content2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.contact-icon{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+    flex-shrink: 0;
+}
+.contact-icon i{
+    font-size: 20px;
+}
+.contact-icon a{
+    text-decoration: none;
+    color: #000;
+}
+.contact-infos{
+    margin-bottom: 50px;
+}
+.contact-form{
+    display: flex;
+    flex-shrink: 0;
+}
+fieldset legend {
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    border: none;
+    background: transparent;
+}
+input[type="submit"]{
+    color:#000;
+    background:#ab63989a;
+    width: 120px;
+    height: 37px;
+    border-radius: 17px;
+    border: none;
+
+}
+@media (max-width:600px) {
+    .navbar a{
+        padding: 0 5px;
+    }
+}
+@media (max-width:500px) {
+    .navbar a{
+        display:none ;
+    }
+    .about .about-infos video{
+        width: 250px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+}
